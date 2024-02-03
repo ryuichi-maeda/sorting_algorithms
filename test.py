@@ -1,4 +1,5 @@
 import unittest
+from selection_sort import SelectionSort
 
 from sort_algorithm import SortAlgorithm
 from bubble_sort import BubbleSort
@@ -38,6 +39,11 @@ class BubbleSortTest(SortTest):
 class InsertionSortTest(SortTest):
     def get_sort_algorithm(self):
         return InsertionSort()
+
+
+class SelectionSortTest(SortTest):
+    def get_sort_algorithm(self):
+        return SelectionSort()
 
 
 if __name__ == "__main__":
