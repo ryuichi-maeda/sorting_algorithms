@@ -33,6 +33,9 @@ class SortTest(unittest.TestCase):
     def test_duplicate_elements(self):
         self.assertEqual(self.sort_algorithm.sort([3, 3, 2, 1, 2]), [1, 2, 2, 3, 3])
 
+    def test_same_elements(self):
+        self.assertEqual(self.sort_algorithm.sort([2, 2, 2, 2, 2]), [2, 2, 2, 2, 2])
+
 
 class BubbleSortTest(SortTest):
     def get_sort_algorithm(self):
