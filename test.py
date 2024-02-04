@@ -1,6 +1,7 @@
 import unittest
 from heap_sort import HeapSort
 from merge_sort import MergeSort
+from quick_sort import QuickSort
 from selection_sort import SelectionSort
 
 from sort_algorithm import SortAlgorithm
@@ -56,6 +57,11 @@ class HeapSortTest(SortTest):
 class MergeSortTest(SortTest):
     def get_sort_algorithm(self):
         return MergeSort()
+
+
+class QuickSortTest(SortTest):
+    def get_sort_algorithm(self):
+        return QuickSort()
 
 
 if __name__ == "__main__":
